@@ -1,0 +1,118 @@
+@font-face {
+  font-family:digital-7mono;
+  src: url('assets/digital-7/digital-7mono.ttf');
+}
+/*Include the following in each css file*/
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: Impact;
+
+
+}
+
+button{
+  /* Adding the rounded corners */
+  border-radius: 20px;
+
+  border: 1px solid #040404;
+  padding: 5px 5px;
+  background: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:#8f8989;
+  color:white;
+  transition: 0.1s;
+}
+
+body{ /*body doesn't have a . before it! */
+  display: flex;
+  justify-content: center;
+  background-color: orange;
+  
+}
+
+.calculator{
+  background-color:black;
+  margin: auto;
+  width: 400px;
+  height:500px;
+  border: 3px solid rgb(5, 5, 5);
+  padding: 10px;
+  border-radius: 15px;
+
+}
+
+.math-related{
+  overflow:hidden;
+  background-color: rgb(2, 2, 2);
+  justify-content:center;
+  height:75%;
+}
+.buttons{
+  height:75%;
+  background-color: rgb(6, 6, 6);
+}
+
+.number-heading{
+  background-color:whitesmoke;
+  text-align:right;
+  height:90px;
+  border: 3px solid black;
+  font-size:50px;
+}
+
+#calculator-value{
+  color:black;
+}
+
+.numbers {
+  background-color:#a3b87f;
+	float: left;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  height:100%;
+  width:70%;
+}
+.number{
+  list-style: none;
+  flex: 0 0 33.333333%;
+}
+
+.operators {
+  background-color: #7e925c;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5px;
+  width:30%;
+  height:100%;
+}
+
+.operator{
+  list-style: none;
+  flex: 0 0 100%;
+}
+
+.extra-calculator-options{
+  background-color:#8ea16f;
+  height:30px;
+  height:25%;
+  flex-wrap: wrap;
+  display:flex;
+  justify-content: center;
+  padding: 10 0 0 0;
+}
+
+.extra-option-buttons{
+  background-color:#ffffff;
+  list-style: none;
+  flex: 0 0 40%;
+  height:70%;
+  margin: 5px;
+}
